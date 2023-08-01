@@ -1,0 +1,23 @@
+columnDefs: [{
+    name: 'FirstName'
+  }, {
+    name: 'LastName'
+  }, {
+    name: 'Job'
+  }, {
+    name: 'Hyperlink',
+    cellTemplate: '<div>' +
+      '  <a href="{{row.entity.link}}">Click me</a>' +
+      '</div>'
+  }],
+data: [{
+    "FirstName": "Sonny",
+    "LastName": "Jayet",
+    "Job": "Stack Overflow User",
+    "link": "https://www.google.com"
+  }, {
+    "FirstName": "Tim",
+    "LastName": "Harker",
+    "Job": "Stack Overflow User",
+    "link": "https://stackoverflow.com"
+  }]
